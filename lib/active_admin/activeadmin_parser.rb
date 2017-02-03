@@ -2,11 +2,11 @@ require "activeadmin"
 require "active_admin/activeadmin_parser/version"
 
 module ActiveAdmin
-	
-	module ActiveadminParser
+
+	module Parser
 	  
 	  def parser_testing
-	  	puts 'Testing parser'
+	  	puts 'Testing parser which do something'
 	  end
 
 	end
@@ -14,6 +14,7 @@ module ActiveAdmin
 
 end
 
-::ActiveAdmin::DSL.send	:include, ActiveAdmin::ActiveadminParser
+p ActiveAdmin::DSL.send(:include, ActiveAdmin::Parser)
+ActiveAdmin::DSL.send(:include, ActiveAdmin::Parser)
 
 
