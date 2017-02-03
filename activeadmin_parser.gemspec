@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'active_admin/activeadmin_parser/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "active_admin/activeadmin_parser"
+  spec.name          = "activeadmin_parser"
   spec.version       = ActiveAdmin::ActiveadminParser::VERSION
   spec.authors       = ["Denis Presnov"]
   spec.email         = ["torq07@gmail.com"]
@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
   
-  spec.add_dependency "activeadmin", ">= 1.0.0.pre1"
+  spec.add_dependency "activeadmin"
 
   spec.add_development_dependency "bundler", "~> 1.14"
   spec.add_development_dependency "rake", "~> 10.0"
