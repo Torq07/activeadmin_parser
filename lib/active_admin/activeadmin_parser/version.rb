@@ -1,5 +1,5 @@
 module ActiveAdmin
-	module ActiveadminParser
-	  VERSION = "0.1.3"
+	module Parser
+	  VERSION = "0.1.4"
 	end
 end	

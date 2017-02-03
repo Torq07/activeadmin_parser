@@ -5,7 +5,7 @@ require 'active_admin/activeadmin_parser/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "activeadmin_parser"
-  spec.version       = ActiveAdmin::ActiveadminParser::VERSION
+  spec.version       = ActiveAdmin::Parser::VERSION
   spec.authors       = ["Denis Presnov"]
   spec.email         = ["torq07@gmail.com"]
 

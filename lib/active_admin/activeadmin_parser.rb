@@ -5,6 +5,8 @@ module ActiveAdmin
 
 	module Parser
 	  
+	  extend ActiveSupport::Concern
+
 	  def parser_testing
 	  	puts 'Testing parser which do something'
 	  end
@@ -14,7 +16,6 @@ module ActiveAdmin
 
 end
 
-p ActiveAdmin::DSL.send(:include, ActiveAdmin::Parser)
-ActiveAdmin::DSL.send(:include, ActiveAdmin::Parser)
+::ActiveAdmin::DSL.send(:include, ActiveAdmin::Parser)
 
 
