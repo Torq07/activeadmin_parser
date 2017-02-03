@@ -1,4 +1,5 @@
 require "activeadmin"
+require "active_admin"
 require "active_admin/activeadmin_parser/version"
 
 module ActiveAdmin
@@ -16,6 +17,6 @@ module ActiveAdmin
 
 end
 
-::ActiveAdmin::DSL.send(:include, ActiveAdmin::Parser)
+ActiveAdmin::DSL.send(:include, ActiveAdmin::Parser)
 
 
